@@ -20,4 +20,5 @@ public class Student {
     private String name;
     private String email;
     private Integer age;
+    private String gender;
 }
