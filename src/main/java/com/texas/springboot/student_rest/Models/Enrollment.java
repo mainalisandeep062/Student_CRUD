@@ -23,7 +23,6 @@ public class Enrollment {
     @ManyToOne
     private Course course;
 
-
     private String semester;
 
     private String grade;

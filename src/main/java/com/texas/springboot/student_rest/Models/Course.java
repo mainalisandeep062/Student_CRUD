@@ -18,11 +18,13 @@ public class Course {
     @Column(name = "course_id")
     private Long courseId;
 
-    @Column(unique = true)
+    @Column(unique = true, nullable = false)
     private String code;
 
+    @Column(name = "course_name", nullable = false)
     private String name;
 
+    @Column(name = "credits", nullable = false)
     private int credits;
 
     @ManyToOne

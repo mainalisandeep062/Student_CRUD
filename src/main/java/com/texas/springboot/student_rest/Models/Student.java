@@ -24,6 +24,9 @@ public class Student {
     @Column(name = "std_email")
     private String email;
 
+    @Column(name = "enrollment_number", unique = true)
+    private String enrollmentNumber;
+
     @Column(name = "age")
     private Integer age;
 
