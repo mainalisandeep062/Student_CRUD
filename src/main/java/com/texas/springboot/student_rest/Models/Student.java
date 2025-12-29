@@ -3,6 +3,8 @@ package com.texas.springboot.student_rest.Models;
 import jakarta.persistence.*;
 import lombok.*;
 
+import java.time.LocalDateTime;
+
 @Entity
 @Getter
 @Setter
@@ -30,6 +32,12 @@ public class Student {
     @Column(name = "age")
     private Integer age;
 
+    @Column(name = "status")
+    private boolean active;
+
     @Column(name = "gender")
     private String gender;
+
+    private LocalDateTime createdAt;
+
 }
