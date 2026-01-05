@@ -3,10 +3,7 @@ package com.texas.springboot.student_rest.Models;
 import jakarta.persistence.*;
 import lombok.*;
 
-@NoArgsConstructor
-@AllArgsConstructor
-@Getter
-@Setter
+@Data
 @Table(name = "Department",uniqueConstraints = {
         @UniqueConstraint(columnNames = "dept_id", name = "uk_dept_id")
 })

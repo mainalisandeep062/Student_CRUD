@@ -1,7 +1,6 @@
 package com.texas.springboot.student_rest.Models;
 
 import jakarta.persistence.*;
-import jakarta.persistence.Id;
 import lombok.*;
 
 @Entity
